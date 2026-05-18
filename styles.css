@@ -453,13 +453,14 @@ h3 {
 }
 
 .site-footer {
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
+  justify-items: center;
+  gap: 16px;
   padding: 36px 0 46px;
   border-top: 1px solid var(--line);
   color: var(--muted);
+  text-align: center;
 }
 
 .site-footer img {
