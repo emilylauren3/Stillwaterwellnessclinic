@@ -323,7 +323,6 @@ h3 {
 
 .intro-band strong {
   display: block;
-  margin-top: 8px;
   color: var(--blue);
   font-size: 1rem;
   letter-spacing: 0.08em;
