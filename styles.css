@@ -90,8 +90,8 @@ a {
   align-items: center;
   gap: 22px;
   padding: 12px 14px 12px 18px;
-  background: rgba(251, 250, 245, 0.9);
-  border: 1px solid rgba(23, 51, 91, 0.08);
+  background: rgba(12, 32, 62, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 8px;
   box-shadow: var(--soft-shadow);
   transform: translateX(-50%);
@@ -110,7 +110,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: clamp(12px, 1.6vw, 24px);
-  color: var(--blue);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -122,7 +122,7 @@ a {
 }
 
 .site-nav a:hover {
-  color: var(--sage-deep);
+  color: var(--sage-light);
 }
 
 .button {
@@ -478,13 +478,13 @@ h3 {
     height: 44px;
     border: 1px solid var(--line);
     border-radius: 4px;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.12);
   }
 
   .nav-toggle span:not(.sr-only) {
     width: 20px;
     height: 2px;
-    background: var(--blue);
+    background: var(--white);
   }
 
   .site-nav {
@@ -497,8 +497,8 @@ h3 {
     align-items: stretch;
     gap: 0;
     padding: 14px;
-    background: rgba(251, 250, 245, 0.96);
-    border: 1px solid var(--line);
+    background: rgba(12, 32, 62, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: 8px;
     box-shadow: 0 18px 38px rgba(12, 32, 62, 0.12);
   }
