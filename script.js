@@ -1,7 +1,9 @@
-const navToggle = document.querySelector("[data-nav-toggle]");
-const nav = document.querySelector("[data-nav]");
+document.querySelectorAll("[data-header]").forEach((header) => {
+  const navToggle = header.querySelector("[data-nav-toggle]");
+  const nav = header.querySelector("[data-nav]");
 
-if (navToggle && nav) {
+  if (!navToggle || !nav) return;
+
   navToggle.addEventListener("click", () => {
     const isOpen = nav.classList.toggle("is-open");
     navToggle.setAttribute("aria-expanded", String(isOpen));
@@ -13,4 +15,4 @@ if (navToggle && nav) {
       navToggle.setAttribute("aria-expanded", "false");
     }
   });
-}
+});
