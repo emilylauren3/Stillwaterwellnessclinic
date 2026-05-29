@@ -2,6 +2,8 @@
   --sage-light: #dfe9df;
   --sage: #89a58e;
   --sage-deep: #496a57;
+  --forest: #10281f;
+  --forest-soft: #18372b;
   --blue: #17335b;
   --blue-deep: #0c203e;
   --cream: #fbfaf5;
@@ -23,8 +25,8 @@ html {
 
 body {
   margin: 0;
-  background: var(--cream);
-  color: var(--ink);
+  background: var(--forest);
+  color: rgba(255, 255, 255, 0.9);
   font-family: Inter, Arial, sans-serif;
   line-height: 1.6;
 }
@@ -193,7 +195,7 @@ a {
   position: absolute;
   inset: auto 0 0;
   height: 28%;
-  background: linear-gradient(180deg, rgba(251, 250, 245, 0), var(--cream) 82%);
+  background: linear-gradient(180deg, rgba(16, 40, 31, 0), var(--forest) 86%);
   z-index: -1;
 }
 
@@ -202,8 +204,8 @@ a {
   inset: 0;
   z-index: -2;
   background:
-    linear-gradient(180deg, rgba(251, 250, 245, 0.12), rgba(251, 250, 245, 0.48) 74%, var(--cream) 100%),
-    linear-gradient(90deg, rgba(251, 250, 245, 0.28), rgba(251, 250, 245, 0.04), rgba(251, 250, 245, 0.28)),
+    linear-gradient(180deg, rgba(251, 250, 245, 0.03), rgba(16, 40, 31, 0.16) 68%, var(--forest) 100%),
+    linear-gradient(90deg, rgba(251, 250, 245, 0.12), rgba(251, 250, 245, 0), rgba(16, 40, 31, 0.18)),
     url("langford-coast-backdrop.png") center / cover no-repeat;
 }
 
@@ -212,11 +214,11 @@ a {
   inset: 18% -6% auto;
   height: 58%;
   background:
-    radial-gradient(ellipse at 50% 44%, rgba(255, 255, 255, 0.28), transparent 62%),
-    radial-gradient(ellipse at 24% 62%, rgba(137, 165, 142, 0.12), transparent 42%),
-    radial-gradient(ellipse at 72% 52%, rgba(23, 51, 91, 0.08), transparent 40%);
-  filter: blur(28px);
-  opacity: 0.58;
+    radial-gradient(ellipse at 50% 44%, rgba(255, 255, 255, 0.18), transparent 62%),
+    radial-gradient(ellipse at 24% 62%, rgba(137, 165, 142, 0.08), transparent 42%),
+    radial-gradient(ellipse at 72% 52%, rgba(23, 51, 91, 0.06), transparent 40%);
+  filter: blur(16px);
+  opacity: 0.36;
 }
 
 .hero-content {
@@ -245,7 +247,7 @@ h1,
 h2,
 h3 {
   margin: 0;
-  color: var(--blue);
+  color: rgba(255, 255, 255, 0.94);
   font-family: "Cormorant Garamond", Georgia, serif;
   line-height: 1.04;
   font-weight: 700;
@@ -273,12 +275,12 @@ h3 {
 .mantra {
   max-width: 820px;
   margin: 30px auto 0;
-  color: var(--sage-deep);
+  color: rgba(223, 233, 223, 0.92);
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: clamp(1.32rem, 2.2vw, 1.8rem);
   font-weight: 600;
   line-height: 1.34;
-  text-shadow: 0 1px 18px rgba(255, 255, 255, 0.88);
+  text-shadow: 0 2px 18px rgba(12, 32, 62, 0.46);
 }
 
 .hero-actions {
@@ -302,8 +304,8 @@ h3 {
   gap: 1px;
   overflow: hidden;
   margin-top: -18px;
-  background: rgba(23, 51, 91, 0.1);
-  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 8px;
   box-shadow: var(--soft-shadow);
 }
@@ -311,7 +313,7 @@ h3 {
 .intro-band div {
   min-height: 170px;
   padding: 34px 32px;
-  background: rgba(255, 255, 255, 0.84);
+  background: rgba(24, 55, 43, 0.88);
 }
 
 .intro-band span {
@@ -323,7 +325,7 @@ h3 {
 
 .intro-band strong {
   display: block;
-  color: var(--blue);
+  color: rgba(255, 255, 255, 0.94);
   font-size: 1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -331,7 +333,7 @@ h3 {
 
 .intro-band p,
 .section p {
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .section {
@@ -359,7 +361,7 @@ h3 {
 .feature-panel,
 .contact-card {
   padding: 36px;
-  background: var(--blue);
+  background: var(--blue-deep);
   color: var(--white);
   border-radius: 2px;
   box-shadow: var(--shadow);
@@ -384,8 +386,8 @@ h3 {
   width: 100%;
   padding-inline: max(24px, calc((100vw - 1160px) / 2));
   background:
-    linear-gradient(180deg, rgba(251, 250, 245, 0.78), rgba(223, 233, 223, 0.64)),
-    linear-gradient(135deg, rgba(223, 233, 223, 0.76), rgba(255, 255, 255, 0.62));
+    linear-gradient(180deg, rgba(16, 40, 31, 0.98), rgba(24, 55, 43, 0.92)),
+    linear-gradient(135deg, rgba(73, 106, 87, 0.22), rgba(12, 32, 62, 0.18));
 }
 
 .section-heading {
@@ -403,8 +405,8 @@ h3 {
 .policy-careers article {
   min-height: 286px;
   padding: 34px;
-  background: rgba(255, 255, 255, 0.86);
-  border: 1px solid rgba(23, 51, 91, 0.1);
+  background: rgba(24, 55, 43, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 2px;
   box-shadow: 0 12px 30px rgba(12, 32, 62, 0.05);
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
@@ -412,7 +414,7 @@ h3 {
 
 .service-grid article:hover,
 .policy-careers article:hover {
-  border-color: rgba(23, 51, 91, 0.18);
+  border-color: rgba(255, 255, 255, 0.22);
   box-shadow: var(--soft-shadow);
   transform: translateY(-3px);
 }
@@ -434,8 +436,8 @@ h3 {
 .muted-section {
   padding-top: 90px;
   padding-bottom: 90px;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .policy-careers {
@@ -465,14 +467,14 @@ h3 {
   justify-items: center;
   gap: 16px;
   padding: 36px 0 46px;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.68);
   text-align: center;
 }
 
 .site-footer img {
   width: 150px;
-  mix-blend-mode: multiply;
+  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.16));
 }
 
 @media (max-width: 980px) {
