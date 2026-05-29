@@ -619,19 +619,30 @@ h3 {
 }
 
 .contact-page .page-title-accent {
-  max-width: min(820px, 100%);
-  margin: 14px auto 22px;
+  max-width: min(980px, 100%);
+  margin: 10px auto 16px;
   color: var(--sage-glow);
-  font-size: clamp(1.65rem, 4.2vw, 3.85rem);
-  letter-spacing: clamp(0.08em, 0.95vw, 0.16em);
+  font-size: clamp(1.65rem, 4vw, 3.35rem);
+  letter-spacing: clamp(0.06em, 0.75vw, 0.14em);
   overflow-wrap: anywhere;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.42), 0 16px 34px rgba(12, 32, 62, 0.5);
 }
 
+.contact-page .page-hero {
+  min-height: auto;
+  padding: 72px 0 42px;
+}
+
 .contact-page .page-hero p:last-child {
-  margin-top: 34px;
+  max-width: 560px;
+  margin-top: 24px;
   font-weight: 800;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 12px 26px rgba(12, 32, 62, 0.34);
+}
+
+.contact-page .page-section {
+  max-width: 860px;
+  padding-bottom: 72px;
 }
 
 .contact-page .page-card p,
@@ -644,7 +655,8 @@ h3 {
   display: grid;
   align-content: center;
   justify-items: center;
-  padding: clamp(30px, 4vw, 42px);
+  min-height: 160px;
+  padding: clamp(26px, 3vw, 34px);
   background:
     radial-gradient(ellipse at 50% 18%, rgba(236, 252, 255, 0.68), rgba(112, 177, 190, 0.46) 40%, rgba(31, 82, 101, 0.3) 72%, rgba(12, 32, 62, 0.16) 100%),
     linear-gradient(180deg, rgba(8, 29, 54, 0.22), rgba(31, 82, 101, 0.36) 54%, rgba(8, 29, 54, 0.2));
@@ -657,6 +669,7 @@ h3 {
 .contact-page .page-card h2 {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   color: var(--sage-glow);
   text-shadow: 0 2px 18px rgba(12, 32, 62, 0.3);
@@ -908,6 +921,10 @@ h3 {
     min-height: auto;
     padding: 72px 0 54px;
   }
+
+  .contact-page .two-column {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 680px) {
@@ -1009,6 +1026,34 @@ h3 {
   .page-hero p:last-child {
     margin-top: 18px;
     font-size: 1.08rem;
+  }
+
+  .contact-page .page-hero {
+    padding: 42px 0 26px;
+  }
+
+  .contact-page .page-title-accent {
+    max-width: 100%;
+    font-size: clamp(1.55rem, 8.4vw, 2.25rem);
+    letter-spacing: 0.06em;
+  }
+
+  .contact-page .page-hero p:last-child {
+    max-width: 28rem;
+    margin-top: 16px;
+  }
+
+  .contact-page .page-section {
+    padding-bottom: 52px;
+  }
+
+  .contact-page .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-page .page-card {
+    min-height: 132px;
+    padding: 20px;
   }
 
   .section {
