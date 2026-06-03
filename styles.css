@@ -507,6 +507,39 @@ h3 {
   gap: 20px;
 }
 
+.policy-careers article {
+  display: flex;
+  flex-direction: column;
+}
+
+.policy-careers article .eyebrow,
+.policy-careers article p {
+  color: var(--blue-deep);
+  text-shadow: none;
+}
+
+.inline-card-link {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: auto;
+  padding-top: 28px;
+  color: var(--blue-deep);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: rgba(12, 32, 62, 0.35);
+  text-underline-offset: 5px;
+}
+
+.inline-card-link:hover,
+.inline-card-link:focus-visible {
+  color: var(--mineral-blue);
+  text-decoration-color: currentColor;
+}
+
 .contact-section {
   padding-top: 80px;
   display: block;
