@@ -752,6 +752,7 @@ h3 {
 }
 
 .contact-page .page-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-content: center;
   justify-items: center;
   margin-inline: auto;
