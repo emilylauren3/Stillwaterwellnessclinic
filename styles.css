@@ -596,6 +596,7 @@ h3 {
 
 .page-section {
   padding: 0 0 108px;
+  transform: translateY(-2cm);
 }
 
 .page-grid {
@@ -713,6 +714,31 @@ h3 {
   border-radius: 999px;
   background: var(--blue-deep);
   opacity: 0.72;
+}
+
+.direct-billing-page .page-title-accent {
+  transform: translateX(-6in);
+}
+
+.direct-billing-page .page-hero {
+  padding-bottom: 34px;
+}
+
+.direct-billing-page .page-hero p:last-child {
+  margin-top: 68px;
+}
+
+.direct-billing-card {
+  padding: clamp(30px, 4vw, 48px);
+}
+
+.direct-billing-card h2:not(:first-child) {
+  margin-top: 34px;
+}
+
+.direct-billing-card p,
+.direct-billing-card .content-list {
+  font-size: clamp(1.02rem, 1.45vw, 1.14rem);
 }
 
 .team-profile {
@@ -928,6 +954,26 @@ h3 {
   transition: color 180ms ease, border-color 180ms ease, transform 180ms ease;
 }
 
+.service-more-info {
+  display: inline-flex;
+  width: fit-content;
+  margin: 4px 0 12px;
+  color: rgba(12, 32, 62, 0.76);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: rgba(12, 32, 62, 0.28);
+  text-underline-offset: 4px;
+}
+
+.service-more-info:hover,
+.service-more-info:focus-visible {
+  color: var(--mineral-blue);
+  text-decoration-color: currentColor;
+}
+
 .service-line:hover,
 .service-line:focus-visible {
   border-bottom-color: rgba(12, 37, 73, 0.36);
@@ -980,6 +1026,18 @@ h3 {
 
 .service-cta .button {
   min-width: 190px;
+}
+
+.service-info-section {
+  margin-top: clamp(34px, 6vw, 72px);
+}
+
+.service-info-card h2 {
+  margin-bottom: 18px;
+}
+
+.service-info-card h3 {
+  scroll-margin-top: 130px;
 }
 
 .contact-card {
