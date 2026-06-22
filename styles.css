@@ -659,6 +659,23 @@ h3 {
   text-decoration-color: currentColor;
 }
 
+.policy-page .page-hero {
+  text-align: center;
+}
+
+.policy-page .page-title-accent {
+  max-width: min(980px, calc(100vw - 56px));
+  margin-inline: auto;
+  font-size: clamp(2.4rem, 5.1vw, 5.4rem);
+  letter-spacing: 0.12em;
+  overflow-wrap: normal;
+}
+
+.policy-stack {
+  grid-template-columns: minmax(0, 760px);
+  justify-content: center;
+}
+
 .team-profile {
   display: grid;
   grid-template-columns: minmax(220px, 0.42fr) minmax(0, 1fr);
