@@ -669,6 +669,7 @@ h3 {
   font-size: clamp(2.4rem, 5.1vw, 5.4rem);
   letter-spacing: 0.12em;
   overflow-wrap: normal;
+  transform: translateX(-4cm);
 }
 
 .policy-stack {
