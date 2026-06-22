@@ -668,7 +668,7 @@ h3 {
   max-width: min(980px, calc(100vw - 56px));
   margin-inline: auto;
   overflow-wrap: normal;
-  transform: translateX(-4cm);
+  transform: translateX(calc(-4cm - 1.5in));
 }
 
 .policy-stack {
@@ -719,7 +719,7 @@ h3 {
 }
 
 .direct-billing-page .page-title-accent {
-  transform: translateX(-1.5in);
+  transform: translateX(-1in);
 }
 
 .direct-billing-page .page-hero p:last-child {
