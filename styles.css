@@ -667,8 +667,6 @@ h3 {
 .policy-page .page-title-accent {
   max-width: min(980px, calc(100vw - 56px));
   margin-inline: auto;
-  font-size: clamp(2.4rem, 5.1vw, 5.4rem);
-  letter-spacing: 0.12em;
   overflow-wrap: normal;
   transform: translateX(-4cm);
 }
@@ -718,6 +716,10 @@ h3 {
 
 .direct-billing-page .page-hero {
   padding-bottom: 34px;
+}
+
+.direct-billing-page .page-title-accent {
+  transform: translateX(-1.5in);
 }
 
 .direct-billing-page .page-hero p:last-child {
