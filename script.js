@@ -1,6 +1,6 @@
 document.querySelectorAll("[data-header]").forEach((header) => {
   const navToggle = header.querySelector("[data-nav-toggle]");
-  const nav = header.querySelector("[data-nav]");
+  const nav = header.querySelector("[data-nav]") || header.querySelector("#site-nav");
 
   if (!navToggle || !nav) return;
 
