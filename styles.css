@@ -563,22 +563,29 @@ h3 {
   min-height: 56vh;
   display: grid;
   align-content: center;
+  justify-items: center;
   padding: 96px 0 72px;
   text-align: center;
 }
 
 .page-hero h1 {
   max-width: 920px;
+  margin-inline: auto;
   font-size: clamp(3rem, 6.8vw, 6.8rem);
 }
 
 .page-title-accent {
+  display: block;
+  width: min(100%, 980px);
+  max-width: min(980px, calc(100vw - 56px));
+  margin-inline: auto;
   color: var(--sage-glow);
   font-family: "Montserrat", Arial, sans-serif;
   font-size: clamp(2.4rem, 5.4vw, 5.2rem);
   font-weight: 400;
   letter-spacing: 0.16em;
   line-height: 1.08;
+  text-align: center;
   text-transform: uppercase;
   text-shadow: 0 4px 10px rgba(0, 0, 0, 0.34), 0 16px 34px rgba(12, 32, 62, 0.42);
 }
@@ -596,7 +603,6 @@ h3 {
 
 .page-section {
   padding: 0 0 108px;
-  transform: translateY(-2cm);
 }
 
 .page-grid {
@@ -665,10 +671,7 @@ h3 {
 }
 
 .policy-page .page-title-accent {
-  max-width: min(980px, calc(100vw - 56px));
-  margin-inline: auto;
   overflow-wrap: normal;
-  transform: translateX(calc(-4cm - 1.5in));
 }
 
 .policy-stack {
@@ -712,18 +715,6 @@ h3 {
   border-radius: 999px;
   background: var(--blue-deep);
   opacity: 0.72;
-}
-
-.direct-billing-page .page-hero {
-  padding-bottom: 34px;
-}
-
-.direct-billing-page .page-title-accent {
-  transform: translateX(-1in);
-}
-
-.direct-billing-page .page-hero p:last-child {
-  margin-top: 68px;
 }
 
 .direct-billing-card {
@@ -1201,18 +1192,29 @@ h3 {
   }
 
   .hero {
-    min-height: auto;
-    padding: 158px 18px 52px;
+    min-height: calc(100svh - 54px);
+    align-items: center;
+    padding: 176px 22px 74px;
   }
 
   h1 {
-    font-size: clamp(1.22rem, 6.4vw, 2.1rem);
+    max-width: 12ch;
+    font-size: clamp(2rem, 10vw, 3rem);
+    line-height: 1.08;
+    white-space: normal;
   }
 
   .hero-wordmark {
-    margin-top: 8px;
-    margin-bottom: 16px;
-    width: min(520px, 96vw);
+    margin-top: 10px;
+    margin-bottom: 24px;
+    width: min(560px, 92vw);
+  }
+
+  .mantra {
+    max-width: 34rem;
+    margin-top: 28px;
+    font-size: clamp(1.12rem, 5vw, 1.34rem);
+    line-height: 1.5;
   }
 
   .hero-actions,
@@ -1220,18 +1222,23 @@ h3 {
     width: 100%;
   }
 
+  .hero-actions {
+    gap: 12px;
+    margin-top: 34px;
+  }
+
   .intro-band,
   .section,
   .page-hero,
   .page-section {
-    width: min(100% - 24px, 1160px);
+    width: min(100% - 32px, 1160px);
   }
 
   .intro-band,
   .page-grid,
   .service-menu,
   .policy-careers {
-    gap: 12px;
+    gap: 16px;
   }
 
   .intro-band div,
@@ -1242,8 +1249,8 @@ h3 {
   .feature-panel,
   .contact-card {
     min-height: auto;
-    padding: 20px;
-    border-radius: 14px;
+    padding: 26px;
+    border-radius: 16px;
     box-shadow: 0 18px 42px rgba(12, 32, 62, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.34);
   }
 
@@ -1259,38 +1266,39 @@ h3 {
   .intro-band strong,
   .page-card h2,
   .service-menu-card h2 {
-    font-size: 0.94rem;
+    font-size: 1.02rem;
     letter-spacing: 0.06em;
   }
 
   .intro-band p,
   .page-card p,
   .service-line {
-    font-size: 0.92rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.62;
   }
 
   .page-main {
     min-height: calc(100vh - 174px);
-    padding-top: 116px;
+    padding-top: 132px;
   }
 
   .page-hero {
-    padding: 52px 0 36px;
+    padding: 70px 0 48px;
   }
 
   .page-hero .page-title-accent {
     width: 100%;
     max-width: 100%;
-    font-size: clamp(1.38rem, 8.2vw, 2.15rem);
-    letter-spacing: 0.055em;
+    font-size: clamp(1.7rem, 9vw, 2.55rem);
+    letter-spacing: 0.045em;
     overflow-wrap: anywhere;
     word-break: normal;
   }
 
   .page-hero p:last-child {
-    margin-top: 18px;
-    font-size: 1.08rem;
+    margin-top: 24px;
+    font-size: 1.14rem;
+    line-height: 1.5;
   }
 
   .contact-page .page-hero {
@@ -1299,8 +1307,8 @@ h3 {
 
   .contact-page .page-title-accent {
     max-width: 100%;
-    font-size: clamp(1.38rem, 8.2vw, 2.15rem);
-    letter-spacing: 0.055em;
+    font-size: clamp(1.7rem, 9vw, 2.55rem);
+    letter-spacing: 0.045em;
   }
 
   .contact-title-balanced {
@@ -1314,12 +1322,8 @@ h3 {
   }
 
   .direct-billing-page .page-title-accent {
-    font-size: clamp(1.28rem, 7.4vw, 1.95rem);
+    font-size: clamp(1.52rem, 8vw, 2.2rem);
     letter-spacing: 0.045em;
-  }
-
-  .direct-billing-page .page-hero p:last-child {
-    max-width: 100%;
   }
 
   .contact-page .page-hero p:last-child {
@@ -1336,22 +1340,13 @@ h3 {
   }
 
   .section {
-    padding: 58px 0;
+    padding: 72px 0;
   }
 
   .service-line {
     gap: 14px;
     padding: 10px 0;
     grid-template-columns: minmax(0, 1fr) auto;
-  }
-
-  .page-section {
-    transform: none;
-  }
-
-  .policy-page .page-title-accent,
-  .direct-billing-page .page-title-accent {
-    transform: none;
   }
 
   .site-footer {
