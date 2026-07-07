@@ -324,10 +324,14 @@ h3 {
   margin-top: 38px;
 }
 
-.intro-band,
 .section {
   width: min(1160px, calc(100% - 40px));
   margin-inline: auto;
+}
+
+.intro-band {
+  width: 100%;
+  margin-inline: 0;
 }
 
 .site-footer {
@@ -339,7 +343,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
-  margin-top: -18px;
+  margin-top: 0;
 }
 
 .intro-band div {
@@ -691,6 +695,30 @@ h3 {
 .page-card a:not(.button):focus-visible {
   color: var(--mineral-blue);
   text-decoration-color: currentColor;
+}
+
+.owner-note-section {
+  padding-top: 0;
+}
+
+.owner-note-card {
+  max-width: 920px;
+  margin-inline: auto;
+}
+
+.owner-note-card .eyebrow {
+  margin-bottom: 14px;
+  color: var(--blue);
+  text-shadow: none;
+}
+
+.owner-note-card h2 {
+  max-width: 720px;
+  margin-bottom: 24px;
+}
+
+.owner-note-card p {
+  max-width: 780px;
 }
 
 .policy-page .page-hero {
@@ -1255,6 +1283,10 @@ h3 {
   .page-hero,
   .page-section {
     width: min(100% - 32px, 1160px);
+  }
+
+  .intro-band {
+    width: 100%;
   }
 
   .intro-band,
