@@ -351,6 +351,7 @@ h3 {
   overflow: hidden;
   min-height: 170px;
   padding: clamp(30px, 4vw, 42px);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
 .intro-band span {
@@ -475,6 +476,7 @@ h3 {
   backdrop-filter: blur(10px);
 }
 
+.intro-band div:hover,
 .service-grid article:hover,
 .policy-careers article:hover {
   border-color: rgba(255, 253, 248, 0.96);
@@ -522,7 +524,7 @@ h3 {
 .policy-careers {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0;
+  gap: 22px;
   max-width: 900px;
 }
 
@@ -1300,6 +1302,10 @@ h3 {
   .service-menu,
   .policy-careers {
     gap: 0;
+  }
+
+  .policy-careers {
+    gap: 18px;
   }
 
   .intro-band div,
