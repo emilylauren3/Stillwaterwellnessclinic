@@ -797,12 +797,13 @@ h3 {
   display: grid;
   grid-template-columns: minmax(220px, 0.42fr) minmax(0, 1fr);
   gap: clamp(28px, 5vw, 56px);
-  align-items: center;
+  align-items: start;
 }
 
 .team-photo-frame {
   position: relative;
   width: min(100%, 320px);
+  margin-top: 8px;
   aspect-ratio: 3 / 4;
   justify-self: center;
   overflow: hidden;
