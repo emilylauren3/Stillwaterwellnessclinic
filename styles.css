@@ -721,6 +721,12 @@ h3 {
   max-width: 780px;
 }
 
+.owner-signature {
+  margin-top: 28px;
+  color: var(--blue-deep);
+  font-weight: 500;
+}
+
 .policy-page .page-hero {
   text-align: center;
 }
