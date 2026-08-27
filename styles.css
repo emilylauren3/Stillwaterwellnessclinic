@@ -1152,6 +1152,37 @@ h3 {
   filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.28));
 }
 
+.footer-nav,
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 22px;
+  width: min(100% - 32px, 920px);
+}
+
+.footer-nav a,
+.footer-social a {
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 180ms ease;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus-visible,
+.footer-social a:hover,
+.footer-social a:focus-visible {
+  color: var(--sage-glow);
+}
+
+.footer-social {
+  gap: 12px 18px;
+}
+
 .site-footer .copyright {
   color: rgba(255, 255, 255, 0.58);
   font-size: 0.76rem;
