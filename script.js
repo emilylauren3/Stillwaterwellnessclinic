@@ -21,12 +21,12 @@ document.querySelectorAll("[data-launch-popup]").forEach((popup) => {
   const closeButton = popup.querySelector("[data-launch-popup-close]");
   const storageKey = "stillwaterDirectBillingNoticeDismissed";
 
-  if (window.sessionStorage.getItem(storageKey) === "true") return;
+  if (window.localStorage.getItem(storageKey) === "true") return;
 
   const closePopup = () => {
     popup.classList.remove("is-visible");
     popup.setAttribute("aria-hidden", "true");
-    window.sessionStorage.setItem(storageKey, "true");
+    window.localStorage.setItem(storageKey, "true");
   };
 
   window.setTimeout(() => {
@@ -35,6 +35,10 @@ document.querySelectorAll("[data-launch-popup]").forEach((popup) => {
   }, 500);
 
   closeButton?.addEventListener("click", closePopup);
+
+  popup.querySelectorAll("a[href]").forEach((link) => {
+    link.addEventListener("click", closePopup);
+  });
 
   popup.addEventListener("click", (event) => {
     if (event.target === popup) {
