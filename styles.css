@@ -802,6 +802,27 @@ h3 {
   padding: clamp(30px, 4vw, 48px);
 }
 
+.direct-billing-page .page-hero p:last-child {
+  width: min(100%, 760px);
+  text-align: center;
+}
+
+.direct-billing-page .policy-stack {
+  width: min(760px, calc(100% - 32px));
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.direct-billing-card > h2 {
+  text-align: center;
+}
+
+.direct-billing-card > h2:first-child + p,
+.direct-billing-card > h2:nth-of-type(2) + p {
+  max-width: 620px;
+  margin-inline: auto;
+  text-align: center;
+}
+
 .direct-billing-card h2:not(:first-child) {
   margin-top: 34px;
 }
