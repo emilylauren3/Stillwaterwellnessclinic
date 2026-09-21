@@ -235,10 +235,50 @@ a {
   position: absolute;
   inset: 0;
   z-index: -2;
+  overflow: hidden;
+}
+
+.hero-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
   background:
     linear-gradient(180deg, rgba(251, 250, 245, 0.03), rgba(16, 40, 31, 0.16) 68%, var(--forest) 100%),
-    linear-gradient(90deg, rgba(251, 250, 245, 0.12), rgba(251, 250, 245, 0), rgba(16, 40, 31, 0.18)),
-    url("langford-coast-backdrop.png") center / cover no-repeat;
+    linear-gradient(90deg, rgba(251, 250, 245, 0.12), rgba(251, 250, 245, 0), rgba(16, 40, 31, 0.18));
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  animation: hero-crossfade 24s linear infinite;
+}
+
+.hero-slide-original {
+  background-image: url("langford-coast-backdrop.png");
+}
+
+.hero-slide-second {
+  background-image: url("langford-coast-angle-2.png");
+  animation-delay: -16s;
+}
+
+.hero-slide-third {
+  background-image: url("langford-coast-angle-3.png");
+  animation-delay: -8s;
+}
+
+@keyframes hero-crossfade {
+  0%, 25% { opacity: 1; }
+  33.333%, 91.667% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-slide { animation: none; }
+  .hero-slide-original { opacity: 1; }
 }
 
 .watercolor-field {
