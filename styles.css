@@ -811,6 +811,58 @@ h3 {
   font-size: clamp(1.02rem, 1.45vw, 1.14rem);
 }
 
+.billing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 28px 0;
+}
+
+.billing-practitioner + .billing-practitioner {
+  border-left: 1px solid rgba(12, 32, 62, 0.22);
+  padding-left: 24px;
+}
+
+.billing-practitioner h3 {
+  margin: 0 0 14px;
+  color: var(--blue-deep);
+}
+
+.billing-practitioner dl {
+  margin: 0;
+}
+
+.billing-practitioner dl div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid rgba(12, 32, 62, 0.14);
+}
+
+.billing-practitioner dt {
+  font-weight: 500;
+}
+
+.billing-practitioner dd {
+  margin: 0;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .billing-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .billing-practitioner + .billing-practitioner {
+    border-left: 0;
+    border-top: 1px solid rgba(12, 32, 62, 0.22);
+    padding: 28px 0 0;
+  }
+}
+
 .team-profile {
   display: grid;
   grid-template-columns: minmax(220px, 0.42fr) minmax(0, 1fr);
