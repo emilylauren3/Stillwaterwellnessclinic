@@ -807,6 +807,12 @@ h3 {
   text-align: center;
 }
 
+.direct-billing-page .page-hero .page-title-accent {
+  width: max-content;
+  max-width: 100%;
+  white-space: normal;
+}
+
 .direct-billing-page .policy-stack {
   width: min(760px, calc(100% - 32px));
   grid-template-columns: minmax(0, 1fr);
