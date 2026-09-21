@@ -33,7 +33,7 @@
             <section class="billing-practitioner" aria-labelledby="billing-shawna">
               <h3 id="billing-shawna">Shawna</h3>
               <dl>
-                <div><dt>Telus Health</dt><dd>Yes</dd></div>
+                <div><dt><button class="telus-provider-trigger" type="button" aria-expanded="false" aria-controls="telus-provider-list" data-telus-trigger>Telus Health</button></dt><dd>Yes</dd></div>
                 <div><dt>Medavie</dt><dd>No</dd></div>
                 <div><dt>Pacific Blue Cross</dt><dd>Yes</dd></div>
                 <div><dt>Sun Life</dt><dd>Yes</dd></div>
@@ -43,7 +43,7 @@
             <section class="billing-practitioner" aria-labelledby="billing-emily">
               <h3 id="billing-emily">Emily</h3>
               <dl>
-                <div><dt>Telus Health</dt><dd>Yes</dd></div>
+                <div><dt><button class="telus-provider-trigger" type="button" aria-expanded="false" aria-controls="telus-provider-list" data-telus-trigger>Telus Health</button></dt><dd>Yes</dd></div>
                 <div><dt>Medavie</dt><dd>No</dd></div>
                 <div><dt>Pacific Blue Cross</dt><dd>No</dd></div>
                 <div><dt>Sun Life</dt><dd>Yes</dd></div>
@@ -53,7 +53,7 @@
             <section class="billing-practitioner" aria-labelledby="billing-darcy">
               <h3 id="billing-darcy">Darcy</h3>
               <dl>
-                <div><dt>Telus Health</dt><dd>Yes</dd></div>
+                <div><dt><button class="telus-provider-trigger" type="button" aria-expanded="false" aria-controls="telus-provider-list" data-telus-trigger>Telus Health</button></dt><dd>Yes</dd></div>
                 <div><dt>Medavie</dt><dd>Yes</dd></div>
                 <div><dt>Pacific Blue Cross</dt><dd>No</dd></div>
                 <div><dt>Sun Life</dt><dd>Yes</dd></div>
@@ -80,6 +80,50 @@
         </article>
       </section>
     </main>
+    <div class="telus-provider-popover" id="telus-provider-list" data-telus-popover hidden>
+      <div class="telus-provider-heading">
+        <h2>Telus Health providers</h2>
+        <button type="button" aria-label="Close provider list" data-telus-close>&times;</button>
+      </div>
+      <p>These providers use the Telus Health portal. Direct billing depends on your plan and current provider availability.</p>
+      <ul>
+        <li>AGA Financial Group Inc.</li>
+        <li>Alberta Blue Cross</li>
+        <li>belairdirect</li>
+        <li>Beneva</li>
+        <li>BPA</li>
+        <li>Canada Life</li>
+        <li>Canada Life - PSHCP</li>
+        <li>Canadian Construction Workers Union (C.C.W.U.)</li>
+        <li>Chambers of Commerce (Johnston Group)</li>
+        <li>CINUP (Johnston Group)</li>
+        <li>ClaimSecure</li>
+        <li>Coughlin &amp; Associates Ltd.</li>
+        <li>Cowan (Express Scripts Canada)</li>
+        <li>Desjardins Insurance</li>
+        <li>Drawbridge</li>
+        <li>Equitable</li>
+        <li>First Canadian (Johnston Group)</li>
+        <li>GMS Carrier 49 (Express Scripts Canada)</li>
+        <li>GMS Carrier 50 (Express Scripts Canada)</li>
+        <li>GroupHEALTH</li>
+        <li>GroupSource</li>
+        <li>Industrial Alliance</li>
+        <li>Johnston Group</li>
+        <li>LiUNA Local 183</li>
+        <li>LiUNA Local 506</li>
+        <li>Manion</li>
+        <li>Manulife Financial</li>
+        <li>Maximum Benefit (Johnston Group)</li>
+        <li>MDM Insurance Services</li>
+        <li>People Corporation</li>
+        <li>RWAM</li>
+        <li>Simply Benefits</li>
+        <li>TELUS AdjudiCare</li>
+        <li>Union Benefits</li>
+        <li>UV Insurance</li>
+      </ul>
+    </div>
     <footer class="site-footer">
       <img src="stillwater-footer-logo.png" alt="Stillwater Wellness Clinic logo">
       <nav class="footer-nav" aria-label="Footer navigation">
