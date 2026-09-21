@@ -830,6 +830,7 @@ h3 {
 
 .billing-practitioner dl {
   margin: 0;
+  color: var(--blue-deep);
 }
 
 .billing-practitioner dl div {
@@ -893,6 +894,7 @@ h3 {
 
 .telus-provider-heading h2 {
   margin: 0;
+  color: var(--blue-deep);
   font-size: 1.2rem;
 }
 
