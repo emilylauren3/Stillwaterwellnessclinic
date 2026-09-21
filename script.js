@@ -19,7 +19,7 @@ document.querySelectorAll("[data-header]").forEach((header) => {
 
 document.querySelectorAll("[data-launch-popup]").forEach((popup) => {
   const closeButton = popup.querySelector("[data-launch-popup-close]");
-  const storageKey = "stillwaterLaunchPopupDismissed";
+  const storageKey = "stillwaterDirectBillingNoticeDismissed";
 
   if (window.sessionStorage.getItem(storageKey) === "true") return;
 

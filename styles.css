@@ -1209,6 +1209,8 @@ h3 {
 
 .launch-popup-card-soft {
   width: min(100%, 560px);
+  max-height: calc(100dvh - 48px);
+  overflow-y: auto;
   padding: clamp(30px, 5vw, 46px) clamp(28px, 6vw, 58px);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0)),
@@ -1237,12 +1239,26 @@ h3 {
 
 .launch-popup-card-soft h2 {
   margin-top: 4px;
-  font-size: clamp(2rem, 6.5vw, 4rem);
+  font-size: clamp(1.75rem, 5vw, 2.8rem);
 }
 
 .launch-popup-card-soft p:not(.eyebrow) {
   max-width: 420px;
-  margin-bottom: 24px;
+  margin: 14px auto;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.launch-popup-card-soft p a {
+  color: var(--blue-deep);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.launch-popup-card-soft .launch-popup-signature {
+  margin-top: 20px;
+  font-weight: 600;
 }
 
 .service-grid article h3,
