@@ -878,6 +878,114 @@ h3 {
   font-size: clamp(1.02rem, 1.45vw, 1.14rem);
 }
 
+.career-posting {
+  max-width: 920px;
+  margin-inline: auto;
+  padding: clamp(30px, 5vw, 56px);
+}
+
+.career-posting > .eyebrow,
+.career-posting > h2,
+.career-intro {
+  text-align: center;
+}
+
+.career-posting > h2 {
+  margin-bottom: 20px;
+}
+
+.career-intro {
+  max-width: 740px;
+  margin: 0 auto 34px;
+}
+
+.career-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 0 42px;
+  border-top: 1px solid rgba(12, 32, 62, 0.2);
+  border-bottom: 1px solid rgba(12, 32, 62, 0.2);
+}
+
+.career-details div {
+  padding: 18px 20px;
+}
+
+.career-details div:nth-child(even) {
+  border-left: 1px solid rgba(12, 32, 62, 0.16);
+}
+
+.career-details div:nth-child(n + 3) {
+  border-top: 1px solid rgba(12, 32, 62, 0.16);
+}
+
+.career-details span,
+.career-details strong {
+  display: block;
+  color: var(--blue-deep);
+}
+
+.career-details span {
+  margin-bottom: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.career-details strong {
+  font-size: 0.98rem;
+  font-weight: 500;
+}
+
+.career-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(30px, 5vw, 56px);
+  margin-bottom: 38px;
+}
+
+.career-posting h3 {
+  color: var(--blue-deep);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.career-posting .content-list {
+  margin-top: 16px;
+  color: var(--blue-deep);
+}
+
+.career-apply {
+  margin-top: 38px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(12, 32, 62, 0.2);
+  text-align: center;
+}
+
+.career-apply p {
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+@media (max-width: 680px) {
+  .career-details,
+  .career-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .career-details div:nth-child(even) {
+    border-left: 0;
+  }
+
+  .career-details div + div {
+    border-top: 1px solid rgba(12, 32, 62, 0.16);
+  }
+}
+
 .billing-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
