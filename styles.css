@@ -114,12 +114,12 @@ a {
   top: 52px;
   left: 0;
   width: 100%;
-  min-height: 72px;
+  min-height: 84px;
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  gap: 22px;
-  padding: 12px max(24px, calc((100vw - 1180px) / 2));
+  gap: 30px;
+  padding: 13px max(28px, calc((100vw - 1320px) / 2));
   background:
     radial-gradient(ellipse at 16% 0%, rgba(223, 233, 223, 0.08), transparent 42%),
     linear-gradient(90deg, rgba(5, 17, 36, 0.99), rgba(11, 32, 62, 0.98), rgba(5, 17, 36, 0.99));
@@ -133,8 +133,8 @@ a {
 .brand-mark {
   display: grid;
   place-items: center;
-  width: 58px;
-  height: 58px;
+  width: 64px;
+  height: 64px;
   background: rgba(251, 250, 245, 0.94);
   border: 1px solid rgba(255, 255, 255, 0.34);
   border-radius: 50%;
@@ -142,8 +142,8 @@ a {
 }
 
 .brand-mark img {
-  width: 50px;
-  height: 34px;
+  width: 55px;
+  height: 38px;
   object-fit: contain;
   object-position: center;
 }
@@ -152,16 +152,16 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(12px, 1.6vw, 24px);
+  gap: clamp(16px, 2vw, 30px);
   color: rgba(255, 255, 255, 0.9);
-  font-size: 0.76rem;
+  font-size: 0.82rem;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .site-nav a {
-  padding: 8px 0;
+  padding: 11px 0;
 }
 
 .site-nav a:hover {
@@ -1508,13 +1508,18 @@ h3 {
     top: 54px;
     width: 100%;
     grid-template-columns: 1fr auto;
-    min-height: 64px;
-    padding: 8px 14px;
+    min-height: 72px;
+    padding: 8px 16px;
+  }
+
+  .brand-mark {
+    width: 56px;
+    height: 56px;
   }
 
   .brand-mark img {
-    width: 48px;
-    height: 32px;
+    width: 50px;
+    height: 34px;
   }
 
   .hero {
